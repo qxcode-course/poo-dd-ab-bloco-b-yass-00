@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-09_14-20-28",
+            "content": "@@ -1,867 +0,0 @@\n-class Camisa:%0A    def __init__(self):%0A        self.__tamanho = %22%22%0A%0A    def getTamanho(self) -%3E str:%0A        return self.__tamanho%0A%0A    def setTamanho(self, tamain: str):%0A        t_val = %5B%22PP%22, %22P%22, %22M%22, %22G%22, %22XG%22%5D%0A        if tamain not in t_val:%0A            print(%22tamanho invalido, tente PP, P, M, G ou XG%22)%0A        else:%0A            self.__tamanho = tamain%0A%0A    def show(self) -%3E None:%0A        print(self)%0A%0A    def __str__(self):%0A        return (f%22size: (%7Bself.getTamanho()%7D)%22)%0A%0Adef main():%0A    camisa = Camisa()%0A%0A    while True:%0A        line = input()%0A        print(%22$%22 + line)%0A        caixinhas = line.split(%22 %22)%0A%0A        if caixinhas%5B0%5D == %22end%22:%0A            break%0A        elif caixinhas%5B0%5D == %22criar%22:%0A            tamain = caixinhas%5B1%5D%0A            camisa.setTamanho(tamain)%0A        elif caixinhas%5B0%5D == %22show%22:%0A            print(camisa)%0A        %0A%0A%0A    %0A%0A%0Amain()\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-10-09_14-21-22",
+            "content": "@@ -262,13 +262,15 @@\n nt(%22\n-Valor\n+tamanho\n  inv\n",
+            "lines": "42"
+        },
+        {
+            "label": "2025-10-09_14-22-17",
+            "content": "@@ -691,20 +691,21 @@\n %5B0%5D == %22\n-size\n+criar\n %22:%0A     \n",
+            "lines": "42"
+        },
+        {
+            "label": "2025-10-09_14-23-25",
+            "content": "@@ -262,14 +262,8 @@\n nt(%22\n-fail: \n Valo\n",
+            "lines": "42"
+        },
+        {
+            "label": "2025-10-09_14-24-00",
+            "content": "@@ -204,14 +204,8 @@\n %22G%22,\n- %22GG%22,\n  %22XG\n@@ -301,12 +301,8 @@\n M, G\n-, GG\n  ou \n",
+            "lines": "42"
+        },
+        {
+            "label": "2025-10-09_14-24-55",
+            "content": "class Camisa:\n    def __init__(self):\n        self.__tamanho = \"\"\n\n    def getTamanho(self) -> str:\n        return self.__tamanho\n\n    def setTamanho(self, tamain: str):\n        t_val = [\"PP\", \"P\", \"M\", \"G\", \"GG\", \"XG\"]\n        if tamain not in t_val:\n            print(\"fail: Valor invalido, tente PP, P, M, G, GG ou XG\")\n        else:\n            self.__tamanho = tamain\n\n    def show(self) -> None:\n        print(self)\n\n    def __str__(self):\n        return (f\"size: ({self.getTamanho()})\")\n\ndef main():\n    camisa = Camisa()\n\n    while True:\n        line = input()\n        print(\"$\" + line)\n        caixinhas = line.split(\" \")\n\n        if caixinhas[0] == \"end\":\n            break\n        elif caixinhas[0] == \"size\":\n            tamain = caixinhas[1]\n            camisa.setTamanho(tamain)\n        elif caixinhas[0] == \"show\":\n            print(camisa)\n        \n\n\n    \n\n\nmain()",
+            "lines": "42"
+        }
+    ]
+}

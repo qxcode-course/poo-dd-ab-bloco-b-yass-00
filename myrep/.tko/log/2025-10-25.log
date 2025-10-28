@@ -1,0 +1,7 @@
+2025-10-25 11:19:25, MOVE, v:1, k:poo@charger, mode:DOWN
+2025-10-25 11:19:25, MOVE, v:1, k:poo@charger, mode:PICK
+2025-10-25 11:19:27, EXEC, v:1, k:poo@charger, mode:FULL, rate:0, size:0
+2025-10-25 11:19:29, EXEC, v:1, k:poo@charger, mode:FULL, rate:0
+2025-10-25 11:19:31, EXEC, v:1, k:poo@charger, mode:FULL, rate:0
+2025-10-25 11:19:33, EXEC, v:1, k:poo@charger, mode:FULL, rate:0
+2025-10-25 11:19:33, MOVE, v:1, k:poo@charger, mode:BACK

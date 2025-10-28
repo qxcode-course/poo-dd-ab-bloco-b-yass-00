@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-07_10-16-03",
+            "content": "@@ -176,17 +176,17 @@\n f pezao \n-%3C\n+%3E\n  20 or p\n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-10-07_10-18-32",
+            "content": "@@ -190,17 +190,17 @@\n r pezao \n-%3E\n+%3C\n  50 or p\n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-10-07_10-18-59",
+            "content": "class Chinela:\n    def __init__(self):\n        self.__tamanho = 0\n\n    def getTamanho(self):\n        return self.__tamanho\n    \n    def setTamanho(self, pezao: int):\n        if pezao < 20 or pezao > 50 or pezao % 2 != 0:\n            print(\"fail: uma prancha n um pe\")\n        else:\n            self.__tamanho = pezao\n\n    def show(self) -> None:\n        print(self)\n\n    def __str__(self):\n        return (f\"seu pezao e igual: {self.getTamanho()}\")\n    \n\ndef main():\n    chinela = Chinela()\n\n    while True:\n        line = input()\n        print(\"$\" + line)\n        caixinhas = line.split(\" \")\n\n        if caixinhas[0] == \"end\":\n            break\n        elif caixinhas[0] == \"criar\":\n            pezao = int(caixinhas[1])\n            chinela.setTamanho(pezao)\n        elif caixinhas[0] == \"show\":\n            print(chinela)\n\nmain()",
+            "lines": "37"
+        }
+    ]
+}

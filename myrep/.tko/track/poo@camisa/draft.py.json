@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-07_15-07-03",
+            "content": "@@ -498,16 +498,21 @@\n )%0A    %0A%0A\n+%0A    \n %0A%0Adef ma\n@@ -796,16 +796,20 @@\n amisa = \n+int(\n caixinha\n@@ -812,16 +812,17 @@\n inhas%5B1%5D\n+)\n %0A       \n",
+            "lines": "49"
+        },
+        {
+            "label": "2025-10-07_15-12-12",
+            "content": "@@ -782,22 +782,22 @@\n         \n-tamain\n+camisa\n  = caixi\n@@ -838,14 +838,14 @@\n nho(\n-tamain\n+camisa\n )%0A  \n",
+            "lines": "48"
+        },
+        {
+            "label": "2025-10-07_15-13-51",
+            "content": "@@ -149,22 +149,22 @@\n o(self, \n-tamain\n+camisa\n : str):%0A\n@@ -331,22 +331,22 @@\n manho = \n-tamain\n+camisa\n %0A%0A    de\n",
+            "lines": "48"
+        },
+        {
+            "label": "2025-10-07_15-17-38",
+            "content": "@@ -551,16 +551,59 @@\n e True:%0A\n+        print(%22qual tamanho da sua blusa%22)%0A\n         \n",
+            "lines": "48"
+        },
+        {
+            "label": "2025-10-07_15-18-46",
+            "content": "@@ -24,37 +24,24 @@\n _init__(self\n-, tamain: str\n ):%0A        s\n@@ -62,40 +62,8 @@\n = %22%22\n-%0A        self.setTamanho(tamain)\n %0A%0A  \n@@ -223,22 +223,26 @@\n if self.\n-tamain\n+getTamanho\n () not i\n",
+            "lines": "47"
+        },
+        {
+            "label": "2025-10-07_15-28-02",
+            "content": "@@ -71,16 +71,48 @@\n nho = %22%22\n+%0A        self.setTamanho(tamain)\n %0A%0A    de\n@@ -263,22 +263,29 @@\n      if \n+self.\n tamain\n+()\n  not in \n@@ -566,20 +566,24 @@\n amisa = \n-None\n+Camisa()\n %0A%0A    wh\n",
+            "lines": "48"
+        },
+        {
+            "label": "2025-10-08_20-53-23",
+            "content": "@@ -531,16 +531,12 @@\n a = \n-Camisa()\n+None\n %0A%0A  \n",
+            "lines": "47"
+        },
+        {
+            "label": "2025-10-08_21-03-51",
+            "content": "@@ -24,24 +24,37 @@\n _init__(self\n+, tamain: str\n ):%0A        s\n@@ -494,16 +494,23 @@\n ho()%7D%22)%0A\n+    %0A%0A%0A\n %0Adef mai\n",
+            "lines": "47"
+        },
+        {
+            "label": "2025-10-08_21-25-58",
+            "content": "class Camisa:\n    def __init__(self):\n        self.__tamanho = \"\"\n\n    def getTamanho(self) -> str:\n        return self.__tamanho\n\n    def setTamanho(self, tamain: str):\n        t_val = [\"PP\", \"P\", \"M\", \"G\", \"XG\"]\n        if tamain not in t_val:\n            print(\"tamanho invalido\")\n        else:\n            self.__tamanho = tamain\n\n    def show(self) -> None:\n        print(self)\n\n    def __str__(self):\n        return (f\"parabens voce comprou uma camisa tmamho: {self.getTamanho()}\")\n\ndef main():\n    camisa = Camisa()\n\n    while True:\n        line = input()\n        print(\"$\" + line)\n        caixinhas = line.split(\" \")\n\n        if caixinhas[0] == \"end\":\n            break\n        elif caixinhas[0] == \"criar\":\n            tamain = caixinhas[1]\n            camisa.setTamanho(tamain)\n        elif caixinhas[0] == \"show\":\n            print(camisa)\n        \n\n\n    \n\n\nmain()\n\n    \n",
+            "lines": "44"
+        }
+    ]
+}

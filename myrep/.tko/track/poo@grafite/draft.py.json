@@ -1,0 +1,129 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-27_19-33-35",
+            "content": "@@ -892,17 +892,18 @@\n _grafite\n-:\n+ =\n  Grafite\n",
+            "lines": "116"
+        },
+        {
+            "label": "2025-10-27_19-41-10",
+            "content": "@@ -2205,25 +2205,16 @@\n != None \n-%0A        \n else %22nu\n",
+            "lines": "116"
+        },
+        {
+            "label": "2025-10-27_19-41-53",
+            "content": "@@ -2196,33 +2196,33 @@\n _grafite != None\n-:\n+ \n %0A        else %22n\n",
+            "lines": "117"
+        },
+        {
+            "label": "2025-10-27_19-42-19",
+            "content": "@@ -2210,28 +2210,24 @@\n ne:%0A        \n-    \n else %22null%22%0A\n",
+            "lines": "117"
+        },
+        {
+            "label": "2025-10-27_19-42-38",
+            "content": "@@ -2112,17 +2112,16 @@\n   %0A%0A    \n-#\n def __st\n@@ -2139,17 +2139,16 @@\n         \n-#\n Grafite \n@@ -2179,17 +2179,16 @@\n         \n-#\n if self.\n@@ -2214,17 +2214,20 @@\n         \n+ \n-#\n+   \n else %22nu\n@@ -2238,17 +2238,16 @@\n         \n-#\n return f\n@@ -2306,227 +2306,12 @@\n e%7D%22%0A\n-%0A    def __str__(self):%0A    if self.__grafite is not None:%0A        grafite_str = f%22%5B%7Bself.__grafite%7D%5D%22%0A    else:%0A        grafite_str = %22null%22%0A    %0A    return f%22calibre: %7Bself.getEspessura():.1f%7D, Grafite: %7Bgrafite_str%7D%22\n+    \n %0A%0Ade\n",
+            "lines": "117"
+        },
+        {
+            "label": "2025-10-27_19-47-44",
+            "content": "@@ -2108,24 +2108,25 @@\n       %0A%0A    \n+#\n def __str__(\n@@ -2140,16 +2140,17 @@\n         \n+#\n Grafite \n@@ -2173,32 +2173,33 @@\n fite%7D%5D%22%0A        \n+#\n if self.__grafit\n@@ -2217,33 +2217,236 @@\n         \n+#\n else\n-:%0A           \n+ %22null%22%0A        #return f%22calibre: %7Bself.getEspessura():1f%7D, Grafite: %7BGrafite%7D%22%0A%0A    def __str__(self):%0A    if self.__grafite is not None:%0A        grafite_str = f%22%5B%7Bself.__grafite%7D%5D%22%0A    else:%0A        grafite_str =\n  %22null%22%0A\n@@ -2445,24 +2445,25 @@\n  %22null%22%0A    \n+%0A\n     return f\n@@ -2485,32 +2485,33 @@\n .getEspessura():\n+.\n 1f%7D, Grafite: %7BG\n@@ -2513,22 +2513,21 @@\n e: %7B\n-G\n+g\n rafite\n-%7D%22%0A    \n+_str%7D%22\n %0A%0Ade\n",
+            "lines": "124"
+        },
+        {
+            "label": "2025-10-27_19-49-53",
+            "content": "@@ -2204,21 +2204,43 @@\n  != None\n- else\n+:%0A        else:%0A           \n  %22null%22%0A\n",
+            "lines": "118"
+        },
+        {
+            "label": "2025-10-27_20-02-26",
+            "content": "@@ -2131,33 +2131,33 @@\n (self):%0A        \n-g\n+G\n rafite = %22%22%0A    \n@@ -2153,125 +2153,68 @@\n e = \n-%22%22%0A        if self.__grafite != None:%0A            grafite = f%22%5B%7Bself.__grafite%7D%5D%22%0A        else:%0A            grafite =\n+f%22%5B%7Bself.__grafite%7D%5D%22%0A        if self.__grafite != None else\n  %22nu\n@@ -2279,17 +2279,17 @@\n afite: %7B\n-g\n+G\n rafite%7D%22\n",
+            "lines": "116"
+        },
+        {
+            "label": "2025-10-27_21-06-11",
+            "content": "@@ -2550,69 +2550,8 @@\n eak%0A\n-        if caixinha%5B0%5D == %22show%22:%0A            print(grafite)%0A\n     \n",
+            "lines": "119"
+        },
+        {
+            "label": "2025-10-27_21-10-24",
+            "content": "@@ -2598,25 +2598,23 @@\n   print(\n-lapiseira\n+grafite\n )%0A      \n",
+            "lines": "121"
+        },
+        {
+            "label": "2025-10-27_21-11-43",
+            "content": "@@ -2325,15 +2325,14 @@\n a():\n-.\n 1f%7D, \n-g\n+G\n rafi\n",
+            "lines": "121"
+        },
+        {
+            "label": "2025-10-27_21-18-18",
+            "content": "@@ -2962,16 +2962,17 @@\n eira.ins\n+s\n erir(gra\n",
+            "lines": "121"
+        },
+        {
+            "label": "2025-10-27_21-19-24",
+            "content": "@@ -1076,38 +1076,320 @@\n %3E bool:%0A        \n-return\n+if self.__grafite != None:%0A            print(%22fail: ja existe grafite%22)%0A            return False%0A        else:%0A            if self.getEspessura() != Grafite.getThickness():%0A                print (%22fail: calibre incompativel%22)%0A                return False%0A            else:%0A               \n  self.__grafite \n@@ -1388,22 +1388,24 @@\n grafite \n-!\n = \n-Non\n+Grafit\n e%0A      \n@@ -1401,32 +1401,49 @@\n fite%0A           \n+     return True%0A\n             %0A   \n@@ -2110,568 +2110,8 @@\n     \n-%0A#     $inserir calibre dureza tamanho - Insere um grafite com o calibre, dureza e tamanho especificados.%0A# erros:%0A# fail: calibre incompativel - Se o calibre do grafite for diferente do calibre da lapiseira.%0A# fail: ja existe grafite - Se j%C3%A1 houver um grafite na lapiseira.%0A    def inserir(self, grafite: Grafite):%0A        if self.getEspessura() != grafite.getThickness():%0A            print(%22fail: calibre incompativel%22)%0A        elif self.temGrafite():%0A            print(%22fail: ja existe grafite%22)%0A        else:%0A            self.__grafite = grafite%0A%0A%0A        \n %0A%0A  \n",
+            "lines": "121"
+        },
+        {
+            "label": "2025-10-27_21-40-50",
+            "content": "@@ -746,17 +746,17 @@\n kness():\n-.\n+ \n 1f%7D:%7Bsel\n",
+            "lines": "126"
+        },
+        {
+            "label": "2025-10-27_21-41-36",
+            "content": "@@ -750,17 +750,16 @@\n s():.1f%7D\n-B\n :%7Bself.g\n",
+            "lines": "126"
+        },
+        {
+            "label": "2025-10-27_21-42-12",
+            "content": "@@ -754,29 +754,8 @@\n .1f%7D\n-:%7Bself.getHardness()%7D\n B:%7Bs\n",
+            "lines": "126"
+        },
+        {
+            "label": "2025-10-27_21-43-26",
+            "content": "@@ -771,16 +771,17 @@\n dness()%7D\n+B\n :%7Bself.g\n",
+            "lines": "126"
+        },
+        {
+            "label": "2025-10-27_21-43-39",
+            "content": "@@ -1287,393 +1287,8 @@\n    %0A\n-#     $escrever - Escreve na folha, considerando o grafite presente na lapiseira.%0A# O grafite %C3%A9 gasto de acordo com a dureza.%0A# erros:%0A# fail: nao existe grafite - Se n%C3%A3o houver grafite na lapiseira.%0A# fail: tamanho insuficiente - Se o tamanho do grafite for insuficiente para come%C3%A7ar a escrita.%0A# fail: folha incompleta - Se o grafite n%C3%A3o for suficiente para terminar a escrita.%0A    %0A\n     \n@@ -1674,22 +1674,60 @@\n oFinal %3C\n-=\n  10:%0A\n+            self.__grafite.getSize(10)%0A\n         \n@@ -1762,16 +1762,16 @@\n pleta%22)%0A\n+\n         \n@@ -1780,24 +1780,16 @@\n   return\n-%0A       \n  self.__\n",
+            "lines": "126"
+        },
+        {
+            "label": "2025-10-27_21-54-09",
+            "content": "@@ -2059,16 +2059,17 @@\n oFinal %3C\n+=\n  10:%0A   \n",
+            "lines": "133"
+        },
+        {
+            "label": "2025-10-27_21-55-51",
+            "content": "@@ -404,25 +404,24 @@\n       self._\n-_\n size += valo\n",
+            "lines": "133"
+        },
+        {
+            "label": "2025-10-27_21-57-39",
+            "content": "@@ -1830,16 +1830,17 @@\n Size() %3C\n+=\n  10:%0A   \n",
+            "lines": "133"
+        },
+        {
+            "label": "2025-10-27_21-58-42",
+            "content": "@@ -414,16 +414,17 @@\n .__size \n++\n = valor%0A\n",
+            "lines": "133"
+        },
+        {
+            "label": "2025-10-27_22-00-33",
+            "content": "@@ -1829,17 +1829,16 @@\n Size() %3C\n-=\n  10:%0A   \n",
+            "lines": "133"
+        },
+        {
+            "label": "2025-10-27_22-01-04",
+            "content": "@@ -2112,47 +2112,8 @@\n a%22)%0A\n-            self.__grafite.setSize(10)%0A\n     \n",
+            "lines": "133"
+        },
+        {
+            "label": "2025-10-27_22-03-04",
+            "content": "class Grafite:\n    def __init__(self, thickness: float, hardness: str, size: int):\n        self.__thickness = thickness\n        self.__hardness = hardness\n        self.__size = size\n\n    def getThickness(self):\n        return self.__thickness\n    \n    def getHardness(self):\n        return self.__hardness\n    \n    def getSize(self):\n        return self.__size\n    \n    def setSize(self, valor: int):\n        self.__size = valor\n\n    def usagePerSheet(self):\n        if self.__hardness == \"HB\":\n            return 1\n        if self.__hardness == \"2B\":\n            return 2\n        if self.__hardness == \"4B\":\n            return 4\n        if self.__hardness == \"6B\":\n            return 6\n    \n    def __str__(self):\n        return f\"{self.getThickness():.1f}:{self.getHardness()}:{self.getSize()}\"\n    \nclass Lapiseira:\n    def __init__(self, espessura: float):\n        self.__espessura = espessura\n        self.__grafite: Grafite| None = None\n\n    def getGrafite(self):\n        return self.__grafite\n    \n    def getEspessura(self):\n        return self.__espessura\n    \n    def temGrafite(self) -> bool:\n        return self.__grafite != None\n                       \n    def remover(self) -> Grafite | None:\n        aux = self.__grafite\n        self.__grafite = None\n        return aux\n    \n#     $escrever - Escreve na folha, considerando o grafite presente na lapiseira.\n# O grafite \u00e9 gasto de acordo com a dureza.\n# erros:\n# fail: nao existe grafite - Se n\u00e3o houver grafite na lapiseira.\n# fail: tamanho insuficiente - Se o tamanho do grafite for insuficiente para come\u00e7ar a escrita.\n# fail: folha incompleta - Se o grafite n\u00e3o for suficiente para terminar a escrita.\n    \n    def escrever(self):\n        if self.__grafite == None:\n            print(\"fail: nao existe grafite\")\n            return\n        if self.__grafite.getSize() <= 10:\n            print(\"fail: tamanho insuficiente\")\n            return\n        uso = self.__grafite.usagePerSheet()\n        tamanhoFinal = self.__grafite.getSize() - uso #e eu n sei onde isso \u00e9 pra tar\n\n        if tamanhoFinal < 10:\n            print(\"fail: folha incompleta\")\n            self.__grafite.setSize(10)\n            return\n        self.__grafite.setSize(tamanhoFinal)\n        \n#     $inserir calibre dureza tamanho - Insere um grafite com o calibre, dureza e tamanho especificados.\n# erros:\n# fail: calibre incompativel - Se o calibre do grafite for diferente do calibre da lapiseira.\n# fail: ja existe grafite - Se j\u00e1 houver um grafite na lapiseira.\n    def inserir(self, grafite: Grafite):\n        if self.getEspessura() != grafite.getThickness():\n            print(\"fail: calibre incompativel\")\n        elif self.temGrafite():\n            print(\"fail: ja existe grafite\")\n        else:\n            self.__grafite = grafite\n\n\n        \n\n    def __str__(self):\n        grafite = \"\"\n        if self.__grafite != None:\n            grafite = f\"[{self.__grafite}]\"\n        else:\n            grafite = \"null\"\n        return f\"calibre: {self.getEspessura():.1f}, grafite: {grafite}\"\n    \n\ndef main():\n    lapiseira = Lapiseira(0)\n\n    while True:\n        line = input()\n        print(\"$\" + line)\n        caixinha = line.split(\" \")\n\n        if caixinha[0] == \"end\":\n            break\n        if caixinha[0] == \"show\":\n            print(lapiseira)\n        if caixinha[0] == \"init\":\n            calibre = float(caixinha[1])\n            lapiseira = Lapiseira(calibre)\n        elif caixinha[0] == \"insert\":\n            calibre_g = float(caixinha[1])\n            espessura = caixinha[2]\n            tam = int(caixinha[3])\n            grafite = Grafite(calibre_g, espessura, tam)\n            lapiseira.inserir(grafite)\n        elif caixinha[0] == \"remove\":\n            lapiseira.remover()\n        elif caixinha[0] == \"write\":\n            lapiseira.escrever()\n\n\nmain()\n\n\n        \n\n\n\n        \n        \n    \n",
+            "lines": "134"
+        }
+    ]
+}
