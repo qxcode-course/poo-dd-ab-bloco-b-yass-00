@@ -1,5 +1,5 @@
 class Pessoa:
-    def _init_(self, nome: str, dinheiro: int):
+    def __init__(self, nome: str, dinheiro: int):
         self.__nome = nome
         self.__dinheiro = dinheiro 
 
@@ -21,11 +21,11 @@ class Pessoa:
     def receber(self, valor: int):
         self.__dinheiro += valor 
     
-    def _str_(self):
+    def __str__(self):
         return f"{self.getNome()}:{self.getDinheiro()}"
     
 class Moto:
-    def _init_(self):
+    def __init__(self):
         self.__motorista: Pessoa | None = None
         self.__passageiro: Pessoa | None = None
         self.__custo: int = 0
@@ -79,7 +79,7 @@ class Moto:
 
     
     def __str__(self):
-        return f"Cost: {self.getCusto()}, Driver: {self._motorista}, Passenger: {self._passageiro}"
+        return f"Cost: {self.__custo}, Driver: {self.__motorista}, Passenger: {self.__passageiro}"
     
 
 def main():

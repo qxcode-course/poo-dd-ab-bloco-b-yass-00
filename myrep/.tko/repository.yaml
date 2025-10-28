@@ -19,7 +19,8 @@ expanded:
 tasks:
   poo@camisa: '{rate:100, human:_, alone:5, study:45}'
   poo@roupa: '{rate:100, human:_, alone:5, study:45}'
-  poo@grafite: '{rate:100}'
+  poo@motoca: '{rate:100, human:_, alone:4, study:80}'
+  poo@grafite: '{rate:100, human:_, alone:7, study:80}'
 flags:
   quests: 0
   tracks: 0
@@ -27,4 +28,4 @@ flags:
   graph: 0
   xray: 0
 lang: py
-selected: poo@motoca
+selected: poo@motouber
